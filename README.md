@@ -162,3 +162,9 @@ $ curl -v http://10.98.223.22/status
 }
 * Connection #0 to host 10.98.223.22 left intact
 ```
+
+## Чистим кластер:
+
+```
+chmod +x simplescripts/clear.sh && ./simplescripts/clear.sh
+```
