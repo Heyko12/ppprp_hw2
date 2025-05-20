@@ -9,4 +9,4 @@ kubectl delete -f config/istio-virtualservice.yaml
 
 export PATH="$PWD/istio-1.20.0/bin:$PATH"
 istioctl uninstall -y --purge || echo "istioctl не найден или Istio уже удалён"
-# minikube stop
+minikube stop

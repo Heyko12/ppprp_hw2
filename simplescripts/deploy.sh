@@ -25,6 +25,8 @@ export PATH="$PWD/istio-1.20.0/bin:$PATH"
 istioctl install --set profile=demo -y
 kubectl label namespace default istio-injection=enabled --overwrite
 
+sleep 10
+
 echo "Применение настроек Istio-компонентов"
 kubectl apply -f config/istio-destinationrule.yaml
 kubectl apply -f config/istio-gateway.yaml
